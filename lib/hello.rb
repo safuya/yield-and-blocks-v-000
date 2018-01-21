@@ -1,5 +1,7 @@
 def hello_t(names)
-  names.each { |name| yield(name) }
+  if names.length > 0
+    names.each { |name| yield(name) }
+  end
 end
 
 # call your method here!
