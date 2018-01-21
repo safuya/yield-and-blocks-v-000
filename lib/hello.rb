@@ -1,5 +1,5 @@
 def hello_t(names)
-  if names.length > 0
+  if block_given?
     names.each { |name| yield(name) }
   end
 end
